@@ -36,5 +36,5 @@ then
     fileName=${fileName}_${count}
 
 fi
-echo "resulting name ${path}/${Year}/${Month}/${Day}/${fileName}"
+#echo "resulting name ${path}/${Year}/${Month}/${Day}/${fileName}"
 cp ${file} ${path}/${Year}/${Month}/${Day}/${fileName}
