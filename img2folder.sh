@@ -3,7 +3,7 @@ file=$1
 path=$2
 Year=$(exiftool -"DateTimeOriginal" $file | cut -d":" -f2 | tr -d ' ')
 Month=$(exiftool -"DateTimeOriginal" $file | cut -d":" -f3)
-Day=$(exiftool -"DateTimeOriginal" $file | cut -d":" -f4 | cut -d" " -f2)
+Day=$(exiftool -"DateTimeOriginal" $file | cut -d":" -f4 | cut -d" " -f1)
 if [ ! -d "${path}" ];
     then
     echo "Create ${path}"
