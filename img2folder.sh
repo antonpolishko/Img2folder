@@ -17,7 +17,7 @@ fi
 if [ ! -d "${path}/${Year}/${Year}-${Month}" ];
     then
     echo "Create ${path}/${Year}/${Year}-${Month}"
-    mkdir ${path}/${Year}/${Month}
+    mkdir "${path}/${Year}/${Year}-${Month}"
 fi
 if [ ! -d "${path}/${Year}/${Year}-${Month}/${Year}-${Month}-${Day}" ];
     then
